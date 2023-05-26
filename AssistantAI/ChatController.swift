@@ -10,10 +10,20 @@ import Foundation
 class ChatController: ObservableObject {
     private let httpService = OpenAIHttpService()
     
-    @Published var response: String = ""
+    @Published var messages: [ChatMessage] = []
+}
+
+// MARK: - Requests
+
+extension ChatController {
+    func send(_ inputText: String) {
+        let message = ChatMessage(role: .user, content: inputText)
+        self.messages.append(message)
+        
+        send(message)
+    }
     
-    func request(_ text: String) {
-        let message = ChatMessage(role: .user, content: text)
+    private func send(_ message: ChatMessage) {
         let body = ChatCompletionRequest(messages: [message])
 
         httpService.executeRequest(
@@ -24,8 +34,10 @@ class ChatController: ObservableObject {
             switch result {
             case .success(let response):
                 print(response)
+                
+                guard let message = response.choices.first?.message else { return }
                 DispatchQueue.main.async {
-                    self?.updateResponse(response.choices.first?.message.content)
+                    self?.handleResponseMessage(message)
                 }
                 
             case .failure(let error):
@@ -34,9 +46,7 @@ class ChatController: ObservableObject {
         }
     }
     
-    private func updateResponse(_ response: String?) {
-        self.response = response ?? ""
+    private func handleResponseMessage(_ message: ChatMessage) {
+        messages.append(message)
     }
-    
-    
 }

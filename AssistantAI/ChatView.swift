@@ -15,11 +15,13 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
-            Text(controller.response)
+            List(controller.messages, id: \.content) { item in
+                Text(item.content)
+            }
             HStack {
                 TextField("You:", text: $input)
                 Button("Send") {
-                    controller.request(input)
+                    controller.send(input)
                     input = ""
                 }
             }
