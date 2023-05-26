@@ -15,7 +15,6 @@
 		7521D5F82A1FCF0F00E7B62D /* AssistantAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5F72A1FCF0F00E7B62D /* AssistantAIUITests.swift */; };
 		7521D5FA2A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5F92A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift */; };
 		7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6072A1FD15000E7B62D /* ChatController.swift */; };
-		7521D60C2A1FDA6300E7B62D /* CompletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60B2A1FDA6300E7B62D /* CompletionRequest.swift */; };
 		7521D60E2A1FDC0600E7B62D /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60D2A1FDC0600E7B62D /* HttpService.swift */; };
 		7521D6102A1FDE5B00E7B62D /* CompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */; };
 		7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */; };
@@ -53,7 +52,6 @@
 		7521D5F72A1FCF0F00E7B62D /* AssistantAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAIUITests.swift; sourceTree = "<group>"; };
 		7521D5F92A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7521D6072A1FD15000E7B62D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
-		7521D60B2A1FDA6300E7B62D /* CompletionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionRequest.swift; sourceTree = "<group>"; };
 		7521D60D2A1FDC0600E7B62D /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResponse.swift; sourceTree = "<group>"; };
 		7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHttpService.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			children = (
 				7521D6162A20999A00E7B62D /* ChatCompletionRequest.swift */,
 				7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */,
-				7521D60B2A1FDA6300E7B62D /* CompletionRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,7 +306,6 @@
 				7521D6172A20999A00E7B62D /* ChatCompletionRequest.swift in Sources */,
 				7521D5DC2A1FCF0D00E7B62D /* AssistantAIApp.swift in Sources */,
 				7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */,
-				7521D60C2A1FDA6300E7B62D /* CompletionRequest.swift in Sources */,
 				7521D6102A1FDE5B00E7B62D /* CompletionResponse.swift in Sources */,
 				7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */,
 				7521D60E2A1FDC0600E7B62D /* HttpService.swift in Sources */,

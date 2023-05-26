@@ -30,14 +30,14 @@ class HTTPService {
     func executeRequest<RequestBody: Encodable, Response: Decodable>(path: String, method: String, body: RequestBody? = nil, completion: @escaping (Result<Response, Error>) -> Void) {
         var request = createRequest(path: path, method: method)
         
-        print("Headers: \(request.allHTTPHeaderFields)")
+        print("Headers: \(String(describing: request.allHTTPHeaderFields))")
 
         if let requestBody = body {
             do {
-                print("Body: \(body)")
+                print("Body: \(String(describing: body))")
                 let encodedBody = try JSONEncoder().encode(requestBody)
                 let encodedString = String(data: encodedBody, encoding: .utf8)
-                print("Encoded body: \(encodedString)")
+                print("Encoded body: \(String(describing: encodedString))")
                 request.httpBody = encodedBody
             } catch {
                 completion(.failure(error))

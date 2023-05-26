@@ -44,18 +44,16 @@ struct ChatMessageView: View {
 struct ChatMessageView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-                    ChatMessageView(message: "Hello!", style: .user)
-                        .previewLayout(.sizeThatFits)
-                        .padding()
-
-                    ChatMessageView(message: "Hi there!", style: .assistant)
-                        .previewLayout(.sizeThatFits)
-                        .padding()
-
-                    ChatMessageView(message: "Welcome to the chat.", style: .system)
-                        .previewLayout(.sizeThatFits)
-                        .padding()
-                }    }
+            ChatMessageView(message: "Hello!", style: .user)
+                .padding()
+            
+            ChatMessageView(message: "Hi there!", style: .assistant)
+                .padding()
+            
+            ChatMessageView(message: "Welcome to the chat.", style: .system)
+                .padding()
+        }
+    }
 }
 
 
