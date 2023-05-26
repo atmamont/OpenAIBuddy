@@ -12,7 +12,7 @@ struct AssistantAIApp: App {
     @StateObject var controller = ChatController()
     var body: some Scene {
         WindowGroup {
-            ContentView(controller: controller)
+            ChatView(controller: controller)
         }
     }
 }
