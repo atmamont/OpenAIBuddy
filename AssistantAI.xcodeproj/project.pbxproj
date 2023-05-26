@@ -20,6 +20,7 @@
 		7521D6102A1FDE5B00E7B62D /* CompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */; };
 		7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */; };
 		7521D6172A20999A00E7B62D /* ChatCompletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6162A20999A00E7B62D /* ChatCompletionRequest.swift */; };
+		75D994772A213A50000D4161 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D994762A213A50000D4161 /* ChatMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResponse.swift; sourceTree = "<group>"; };
 		7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHttpService.swift; sourceTree = "<group>"; };
 		7521D6162A20999A00E7B62D /* ChatCompletionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionRequest.swift; sourceTree = "<group>"; };
+		75D994762A213A50000D4161 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +109,10 @@
 		7521D5DA2A1FCF0D00E7B62D /* AssistantAI */ = {
 			isa = PBXGroup;
 			children = (
-				7521D6072A1FD15000E7B62D /* ChatController.swift */,
+				75D994752A213A31000D4161 /* Chat */,
 				7521D6112A1FDEC700E7B62D /* Models */,
 				7521D6062A1FCF1F00E7B62D /* Network */,
 				7521D5DB2A1FCF0D00E7B62D /* AssistantAIApp.swift */,
-				7521D5DD2A1FCF0D00E7B62D /* ChatView.swift */,
 				7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */,
 				7521D5E12A1FCF0E00E7B62D /* AssistantAI.entitlements */,
 				7521D5E22A1FCF0E00E7B62D /* Preview Content */,
@@ -161,6 +162,16 @@
 				7521D60B2A1FDA6300E7B62D /* CompletionRequest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		75D994752A213A31000D4161 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7521D6072A1FD15000E7B62D /* ChatController.swift */,
+				7521D5DD2A1FCF0D00E7B62D /* ChatView.swift */,
+				75D994762A213A50000D4161 /* ChatMessageView.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D994772A213A50000D4161 /* ChatMessageView.swift in Sources */,
 				7521D5DE2A1FCF0D00E7B62D /* ChatView.swift in Sources */,
 				7521D6172A20999A00E7B62D /* ChatCompletionRequest.swift in Sources */,
 				7521D5DC2A1FCF0D00E7B62D /* AssistantAIApp.swift in Sources */,

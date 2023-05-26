@@ -16,7 +16,7 @@ struct ChatView: View {
     var body: some View {
         VStack {
             List(controller.messages, id: \.content) { item in
-                Text(item.content)
+                ChatMessageView(message: item.content, style: item.role.messageStyle)
             }
             HStack {
                 TextField("You:", text: $input)
