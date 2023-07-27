@@ -12,8 +12,6 @@
 		7521D5E02A1FCF0E00E7B62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */; };
 		7521D5E42A1FCF0E00E7B62D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7521D5E32A1FCF0E00E7B62D /* Preview Assets.xcassets */; };
 		7521D5EE2A1FCF0F00E7B62D /* AssistantAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5ED2A1FCF0F00E7B62D /* AssistantAITests.swift */; };
-		7521D5F82A1FCF0F00E7B62D /* AssistantAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5F72A1FCF0F00E7B62D /* AssistantAIUITests.swift */; };
-		7521D5FA2A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5F92A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift */; };
 		7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6072A1FD15000E7B62D /* ChatController.swift */; };
 		7521D60E2A1FDC0600E7B62D /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60D2A1FDC0600E7B62D /* HttpService.swift */; };
 		7521D6102A1FDE5B00E7B62D /* CompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */; };
@@ -24,13 +22,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		7521D5EA2A1FCF0F00E7B62D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7521D5D02A1FCF0D00E7B62D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7521D5D72A1FCF0D00E7B62D;
-			remoteInfo = AssistantAI;
-		};
-		7521D5F42A1FCF0F00E7B62D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7521D5D02A1FCF0D00E7B62D /* Project object */;
 			proxyType = 1;
@@ -48,14 +39,12 @@
 		7521D5E32A1FCF0E00E7B62D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistantAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7521D5ED2A1FCF0F00E7B62D /* AssistantAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAITests.swift; sourceTree = "<group>"; };
-		7521D5F32A1FCF0F00E7B62D /* AssistantAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistantAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7521D5F72A1FCF0F00E7B62D /* AssistantAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAIUITests.swift; sourceTree = "<group>"; };
-		7521D5F92A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7521D6072A1FD15000E7B62D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		7521D60D2A1FDC0600E7B62D /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		7521D60F2A1FDE5B00E7B62D /* CompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResponse.swift; sourceTree = "<group>"; };
 		7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHttpService.swift; sourceTree = "<group>"; };
 		7521D6162A20999A00E7B62D /* ChatCompletionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionRequest.swift; sourceTree = "<group>"; };
+		753E400A2A72744300711B58 /* AssistantAI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssistantAI.xctestplan; sourceTree = "<group>"; };
 		75D994762A213A50000D4161 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,22 +63,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7521D5F02A1FCF0F00E7B62D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7521D5CF2A1FCF0D00E7B62D = {
 			isa = PBXGroup;
 			children = (
+				753E400A2A72744300711B58 /* AssistantAI.xctestplan */,
 				7521D5DA2A1FCF0D00E7B62D /* AssistantAI */,
 				7521D5EC2A1FCF0F00E7B62D /* AssistantAITests */,
-				7521D5F62A1FCF0F00E7B62D /* AssistantAIUITests */,
 				7521D5D92A1FCF0D00E7B62D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +81,6 @@
 			children = (
 				7521D5D82A1FCF0D00E7B62D /* AssistantAI.app */,
 				7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */,
-				7521D5F32A1FCF0F00E7B62D /* AssistantAIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,15 +113,6 @@
 				7521D5ED2A1FCF0F00E7B62D /* AssistantAITests.swift */,
 			);
 			path = AssistantAITests;
-			sourceTree = "<group>";
-		};
-		7521D5F62A1FCF0F00E7B62D /* AssistantAIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7521D5F72A1FCF0F00E7B62D /* AssistantAIUITests.swift */,
-				7521D5F92A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift */,
-			);
-			path = AssistantAIUITests;
 			sourceTree = "<group>";
 		};
 		7521D6062A1FCF1F00E7B62D /* Network */ = {
@@ -209,24 +181,6 @@
 			productReference = 7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7521D5F22A1FCF0F00E7B62D /* AssistantAIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7521D6032A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAIUITests" */;
-			buildPhases = (
-				7521D5EF2A1FCF0F00E7B62D /* Sources */,
-				7521D5F02A1FCF0F00E7B62D /* Frameworks */,
-				7521D5F12A1FCF0F00E7B62D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7521D5F52A1FCF0F00E7B62D /* PBXTargetDependency */,
-			);
-			name = AssistantAIUITests;
-			productName = AssistantAIUITests;
-			productReference = 7521D5F32A1FCF0F00E7B62D /* AssistantAIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,10 +195,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					7521D5E82A1FCF0F00E7B62D = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 7521D5D72A1FCF0D00E7B62D;
-					};
-					7521D5F22A1FCF0F00E7B62D = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 7521D5D72A1FCF0D00E7B62D;
 					};
@@ -265,7 +215,6 @@
 			targets = (
 				7521D5D72A1FCF0D00E7B62D /* AssistantAI */,
 				7521D5E82A1FCF0F00E7B62D /* AssistantAITests */,
-				7521D5F22A1FCF0F00E7B62D /* AssistantAIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,13 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7521D5E72A1FCF0F00E7B62D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7521D5F12A1FCF0F00E7B62D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,15 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7521D5EF2A1FCF0F00E7B62D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7521D5F82A1FCF0F00E7B62D /* AssistantAIUITests.swift in Sources */,
-				7521D5FA2A1FCF0F00E7B62D /* AssistantAIUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -336,11 +269,6 @@
 			isa = PBXTargetDependency;
 			target = 7521D5D72A1FCF0D00E7B62D /* AssistantAI */;
 			targetProxy = 7521D5EA2A1FCF0F00E7B62D /* PBXContainerItemProxy */;
-		};
-		7521D5F52A1FCF0F00E7B62D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7521D5D72A1FCF0D00E7B62D /* AssistantAI */;
-			targetProxy = 7521D5F42A1FCF0F00E7B62D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -570,48 +498,6 @@
 			};
 			name = Release;
 		};
-		7521D6042A1FCF0F00E7B62D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.AssistantAIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AssistantAI;
-			};
-			name = Debug;
-		};
-		7521D6052A1FCF0F00E7B62D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.AssistantAIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AssistantAI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -638,15 +524,6 @@
 			buildConfigurations = (
 				7521D6012A1FCF0F00E7B62D /* Debug */,
 				7521D6022A1FCF0F00E7B62D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7521D6032A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7521D6042A1FCF0F00E7B62D /* Debug */,
-				7521D6052A1FCF0F00E7B62D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

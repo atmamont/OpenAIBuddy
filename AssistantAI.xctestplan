@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "1C2111F9-1762-483B-B615-61C3A24A2007",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:AssistantAI.xcodeproj",
+      "identifier" : "7521D5D72A1FCF0D00E7B62D",
+      "name" : "AssistantAI"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:AssistantAI.xcodeproj",
+        "identifier" : "7521D5E82A1FCF0F00E7B62D",
+        "name" : "AssistantAITests"
+      }
+    }
+  ],
+  "version" : 1
+}
