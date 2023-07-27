@@ -10,10 +10,12 @@ import Foundation
 class HTTPService {
     private let baseURL: URL
     private let token: String
+    private let urlSession: URLSession
 
-    init(baseURL: URL, token: String) {
+    init(baseURL: URL, token: String, urlSession: URLSession = .shared) {
         self.baseURL = baseURL
         self.token = token
+        self.urlSession = urlSession
     }
 
     private func createRequest(path: String, method: String) -> URLRequest {
@@ -45,7 +47,7 @@ class HTTPService {
             }
         }
 
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = urlSession.dataTask(with: request) { data, response, error in
             if let error = error {
                 DispatchQueue.main.async {
                     completion(.failure(error))
