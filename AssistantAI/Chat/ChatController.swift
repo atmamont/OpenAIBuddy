@@ -11,6 +11,7 @@ class ChatController: ObservableObject {
     private let httpService: HTTPService
     
     @Published var messages: [ChatMessage] = []
+    @Published var error: Error?
     
     init(httpService: HTTPService = OpenAIHttpService()) {
         self.httpService = httpService
@@ -54,5 +55,6 @@ extension ChatController {
     
     private func handle(error: Error) {
         print(error)
+        self.error = error
     }
 }

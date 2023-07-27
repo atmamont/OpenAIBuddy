@@ -1,5 +1,5 @@
 //
-//  AssistantAITests.swift
+//  ChatControllerTests.swift
 //  AssistantAITests
 //
 //  Created by Andrei on 25/05/2023.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import AssistantAI
 
-final class AssistantAITests: XCTestCase {
+final class ChatControllerTests: XCTestCase {
     
     func test_chatController_sendsRequest() {
         let mockHttpService = HTTPServiceMock(baseURL: URL(string: "baseUrl")!, token: "token")
@@ -39,22 +39,37 @@ final class AssistantAITests: XCTestCase {
         let assistantMessages = sut.messages.filter { $0.role == .assistant }
         XCTAssertEqual(assistantMessages.last?.content, mockHttpService.defaultResponseText)
     }
+    
+    func test_chatController_publishesErrorOnFailure() {
+        let mockHttpService = HTTPServiceMock(baseURL: URL(string: "baseUrl")!, token: "token")
+        mockHttpService.defaultError = NSError(domain: "any", code: 0)
+
+        let sut = ChatController(httpService: mockHttpService)
+        sut.send("Test message")
+        
+        XCTAssertNotNil(sut.error, "Error should be not nil")
+    }
 }
 
 class HTTPServiceMock: HTTPService {
     var executeRequestCallCount = 0
+    
+    let defaultResponseText = "Hi how can I help you?"
     lazy var defaultResponse = ChatCompletionResponse(
         choices: [.init(message: .init(role: .assistant,
                                        content: defaultResponseText)),
                   .init(message: .init(role: .assistant, content: "Another message"))]
     )
-    let defaultResponseText = "Hi how can I help you?"
+    var defaultError: Error?
     
     override func executeRequest<RequestBody, Response>(path: String, method: String, body: RequestBody? = nil, completion: @escaping (Result<Response, Error>) -> Void) where RequestBody : Encodable, Response : Decodable {
         
-        let response = defaultResponse
-        
         executeRequestCallCount += 1
-        completion(.success(response as! Response))
+        
+        if let defaultError {
+            completion(.failure(defaultError))
+        } else {
+            completion(.success(defaultResponse as! Response))
+        }
     }
 }
