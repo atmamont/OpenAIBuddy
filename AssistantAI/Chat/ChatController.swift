@@ -8,9 +8,13 @@
 import Foundation
 
 class ChatController: ObservableObject {
-    private let httpService = OpenAIHttpService()
+    private let httpService: HTTPService
     
     @Published var messages: [ChatMessage] = []
+    
+    init(httpService: HTTPService = OpenAIHttpService()) {
+        self.httpService = httpService
+    }
 }
 
 // MARK: - Requests
@@ -30,23 +34,25 @@ extension ChatController {
             path: "chat/completions",
             method: "POST",
             body: body)
-        { [weak self] (result: Result<CompletionResponse, Error>) in
+        { [weak self] (result: Result<ChatCompletionResponse, Error>) in
             switch result {
             case .success(let response):
                 print(response)
                 
                 guard let message = response.choices.first?.message else { return }
-                DispatchQueue.main.async {
-                    self?.handleResponseMessage(message)
-                }
+                self?.handleResponseMessage(message)
                 
             case .failure(let error):
-                print(error)
+                self?.handle(error: error)
             }
         }
     }
     
     private func handleResponseMessage(_ message: ChatMessage) {
         messages.append(message)
+    }
+    
+    private func handle(error: Error) {
+        print(error)
     }
 }

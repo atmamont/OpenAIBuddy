@@ -1,5 +1,5 @@
 //
-//  HttpService.swift
+//  HTTPService.swift
 //  AssistantAI
 //
 //  Created by Andrei on 25/05/2023.
@@ -38,40 +38,54 @@ class HTTPService {
                 print("Encoded body: \(String(describing: encodedString))")
                 request.httpBody = encodedBody
             } catch {
-                completion(.failure(error))
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
                 return
             }
         }
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                completion(.failure(error))
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
                 return
             }
 
             guard let httpResponse = response as? HTTPURLResponse else {
                 let unknownError = NSError(domain: "HTTPService", code: 0, userInfo: nil)
-                completion(.failure(unknownError))
+                DispatchQueue.main.async {
+                    completion(.failure(unknownError))
+                }
                 return
             }
 
             guard (200...299).contains(httpResponse.statusCode) else {
                 let statusCodeError = NSError(domain: "HTTPService", code: httpResponse.statusCode, userInfo: nil)
-                completion(.failure(statusCodeError))
+                DispatchQueue.main.async {
+                    completion(.failure(statusCodeError))
+                }
                 return
             }
 
             guard let responseData = data else {
                 let emptyResponseError = NSError(domain: "HTTPService", code: 0, userInfo: nil)
-                completion(.failure(emptyResponseError))
+                DispatchQueue.main.async {
+                    completion(.failure(emptyResponseError))
+                }
                 return
             }
 
             do {
                 let decodedData = try JSONDecoder().decode(Response.self, from: responseData)
-                completion(.success(decodedData))
+                DispatchQueue.main.async {
+                    completion(.success(decodedData))
+                }
             } catch {
-                completion(.failure(error))
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }
 

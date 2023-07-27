@@ -8,11 +8,11 @@
 import Foundation
 
 struct ChatMessage: Codable {
-    let role: UserRole
+    let role: ChatUserRole
     let content: String
 }
 
-enum UserRole: String, Codable {
+enum ChatUserRole: String, Codable {
     case user
     case assistant
     case system

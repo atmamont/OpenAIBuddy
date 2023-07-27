@@ -9,7 +9,6 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:AssistantAI.xcodeproj",
       "identifier" : "7521D5D72A1FCF0D00E7B62D",

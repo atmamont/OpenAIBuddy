@@ -13,7 +13,7 @@ enum MessageStyle {
     case system
 }
 
-extension UserRole {
+extension ChatUserRole {
     var messageStyle: MessageStyle {
         switch self {
         case .assistant: return .assistant
