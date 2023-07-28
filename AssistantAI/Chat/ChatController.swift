@@ -29,7 +29,7 @@ extension ChatController {
     }
     
     private func send(_ message: ChatMessage) {
-        let body = ChatCompletionRequest(messages: [message])
+        let body = ChatCompletionRequest(messages: prepareMessages())
 
         httpService.executeRequest(
             path: "chat/completions",
@@ -38,8 +38,6 @@ extension ChatController {
         { [weak self] (result: Result<ChatCompletionResponse, Error>) in
             switch result {
             case .success(let response):
-                print(response)
-                
                 guard let message = response.choices.first?.message else { return }
                 self?.handleResponseMessage(message)
                 
@@ -49,12 +47,15 @@ extension ChatController {
         }
     }
     
+    private func prepareMessages() -> [ChatMessage] {
+        messages.suffix(10)
+    }
+    
     private func handleResponseMessage(_ message: ChatMessage) {
         messages.append(message)
     }
     
     private func handle(error: Error) {
-        print(error)
         self.error = error
     }
 }
