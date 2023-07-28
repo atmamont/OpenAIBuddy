@@ -43,11 +43,26 @@ final class ChatControllerTests: XCTestCase {
     func test_chatController_publishesErrorOnFailure() {
         let mockHttpService = HTTPServiceMock(baseURL: URL(string: "baseUrl")!, token: "token")
         mockHttpService.defaultError = NSError(domain: "any", code: 0)
-
+        
         let sut = ChatController(httpService: mockHttpService)
         sut.send("Test message")
         
         XCTAssertNotNil(sut.error, "Error should be not nil")
+    }
+    
+    func test_chatController_preservesMessagesContextOnSend() {
+        let mockHttpService = HTTPServiceMock(baseURL: URL(string: "baseUrl")!, token: "token")
+
+        let sut = ChatController(httpService: mockHttpService)
+        sut.messages = [
+            ChatMessage(role: .user, content: "First message"),
+            ChatMessage(role: .assistant, content: "First reply")
+        ]
+        
+        sut.send("Second message")
+        
+        let body: ChatCompletionRequest = try! XCTUnwrap(mockHttpService.recordedBody) as! ChatCompletionRequest
+        XCTAssertEqual(body.messages.count, 3)
     }
 }
 
@@ -62,9 +77,12 @@ class HTTPServiceMock: HTTPService {
     )
     var defaultError: Error?
     
+    var recordedBody: Encodable?
+    
     override func executeRequest<RequestBody, Response>(path: String, method: String, body: RequestBody? = nil, completion: @escaping (Result<Response, Error>) -> Void) where RequestBody : Encodable, Response : Decodable {
         
         executeRequestCallCount += 1
+        recordedBody = body
         
         if let defaultError {
             completion(.failure(defaultError))
