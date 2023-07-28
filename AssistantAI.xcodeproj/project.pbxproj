@@ -49,6 +49,8 @@
 		753E400A2A72744300711B58 /* AssistantAI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssistantAI.xctestplan; sourceTree = "<group>"; };
 		753E400B2A72EA4700711B58 /* HttpServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceTests.swift; sourceTree = "<group>"; };
 		753E400E2A72F21100711B58 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		756011682A7462FB0056CEBC /* ConfigDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigDev.xcconfig; sourceTree = "<group>"; };
+		756011692A7468AC0056CEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		75D994762A213A50000D4161 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		7521D5CF2A1FCF0D00E7B62D = {
 			isa = PBXGroup;
 			children = (
+				756011682A7462FB0056CEBC /* ConfigDev.xcconfig */,
 				753E400A2A72744300711B58 /* AssistantAI.xctestplan */,
 				7521D5DA2A1FCF0D00E7B62D /* AssistantAI */,
 				7521D5EC2A1FCF0F00E7B62D /* AssistantAITests */,
@@ -92,6 +95,7 @@
 		7521D5DA2A1FCF0D00E7B62D /* AssistantAI */ = {
 			isa = PBXGroup;
 			children = (
+				756011692A7468AC0056CEBC /* Info.plist */,
 				75D994752A213A31000D4161 /* Chat */,
 				7521D6112A1FDEC700E7B62D /* Models */,
 				7521D6062A1FCF1F00E7B62D /* Network */,
@@ -332,6 +336,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"ENV=$(CONFIGURATION)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -400,6 +405,7 @@
 		};
 		7521D5FE2A1FCF0F00E7B62D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756011682A7462FB0056CEBC /* ConfigDev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +415,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AssistantAI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantAI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -445,6 +452,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AssistantAI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantAI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
