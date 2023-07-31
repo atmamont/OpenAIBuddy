@@ -78,7 +78,7 @@
 				756011682A7462FB0056CEBC /* ConfigDev.xcconfig */,
 				753E400A2A72744300711B58 /* OpenAIBuddy.xctestplan */,
 				7521D5DA2A1FCF0D00E7B62D /* OpenAIBuddy */,
-				7521D5EC2A1FCF0F00E7B62D /* AssistantAITests */,
+				7521D5EC2A1FCF0F00E7B62D /* OpenAIBuddyTests */,
 				7521D5D92A1FCF0D00E7B62D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,14 +115,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7521D5EC2A1FCF0F00E7B62D /* AssistantAITests */ = {
+		7521D5EC2A1FCF0F00E7B62D /* OpenAIBuddyTests */ = {
 			isa = PBXGroup;
 			children = (
 				753E400D2A72F1FE00711B58 /* URLSession */,
 				7521D5ED2A1FCF0F00E7B62D /* ChatControllerTests.swift */,
 				753E400B2A72EA4700711B58 /* HttpServiceTests.swift */,
 			);
-			path = AssistantAITests;
+			path = OpenAIBuddyTests;
 			sourceTree = "<group>";
 		};
 		7521D6062A1FCF1F00E7B62D /* Network */ = {
