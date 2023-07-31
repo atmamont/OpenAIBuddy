@@ -9,7 +9,7 @@ import XCTest
 @testable import AssistantAI
 
 final class HttpServiceTests: XCTestCase {
-    private let baseUrl = URL(string: "baseUrl")!
+    private let baseUrl = URL(string: "http://baseUrl")!
     private let token = "token"
     private let path = "path"
     private let method = "POST"
@@ -36,9 +36,40 @@ final class HttpServiceTests: XCTestCase {
             return (response, data)
         }
         
-        let sut = HTTPService(baseURL: baseUrl, token: token)
+        let sut = HTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
         sut.executeRequest(path: "path", method: method, body: MockBody()) { (result: Result<MockResponse, Error>) in
         }
+    }
+    
+    func test_httpService_failure() {
+        let data = "".data(using: .utf8)
+        let body = MockBody()
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(
+                url: self.baseUrl,
+                statusCode: 404,
+                httpVersion: nil,
+                headerFields: nil)!
+            
+            return (response, data)
+        }
+
+        let exp = expectation(description: "Network")
+        
+        let sut = HTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
+        sut.executeRequest(path: "path", method: method, body: body) { (result: Result<MockResponse, Error>) in
+            
+            switch result {
+            case .success:
+                XCTFail("Should be a failure")
+            case .failure(let error):
+                XCTAssertEqual((error as NSError).code, 404)
+            }
+            
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 0.1)
     }
 }
 
