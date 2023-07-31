@@ -1,6 +1,6 @@
 //
 //  ChatController.swift
-//  AssistantAI
+//  OpenAIBuddy
 //
 //  Created by Andrei on 25/05/2023.
 //

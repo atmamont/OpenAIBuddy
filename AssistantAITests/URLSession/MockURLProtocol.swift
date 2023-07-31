@@ -1,6 +1,6 @@
 //
 //  MockURLProtocol.swift
-//  AssistantAITests
+//  OpenAIBuddyTests
 //
 //  Created by Andrei on 27/07/2023.
 //

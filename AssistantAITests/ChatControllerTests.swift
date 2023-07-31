@@ -1,12 +1,12 @@
 //
 //  ChatControllerTests.swift
-//  AssistantAITests
+//  OpenAIBuddyTests
 //
 //  Created by Andrei on 25/05/2023.
 //
 
 import XCTest
-@testable import AssistantAI
+@testable import OpenAIBuddy
 
 final class ChatControllerTests: XCTestCase {
     

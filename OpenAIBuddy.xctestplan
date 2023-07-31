@@ -18,9 +18,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:AssistantAI.xcodeproj",
+        "containerPath" : "container:OpenAIBuddy.xcodeproj",
         "identifier" : "7521D5E82A1FCF0F00E7B62D",
-        "name" : "AssistantAITests"
+        "name" : "OpenAIBuddyTests"
       }
     }
   ],

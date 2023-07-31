@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7521D5DC2A1FCF0D00E7B62D /* AssistantAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5DB2A1FCF0D00E7B62D /* AssistantAIApp.swift */; };
+		7521D5DC2A1FCF0D00E7B62D /* OpenAIBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5DB2A1FCF0D00E7B62D /* OpenAIBuddy.swift */; };
 		7521D5DE2A1FCF0D00E7B62D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5DD2A1FCF0D00E7B62D /* ChatView.swift */; };
 		7521D5E02A1FCF0E00E7B62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */; };
 		7521D5E42A1FCF0E00E7B62D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7521D5E32A1FCF0E00E7B62D /* Preview Assets.xcassets */; };
@@ -33,20 +33,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7521D5D82A1FCF0D00E7B62D /* AssistantAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7521D5DB2A1FCF0D00E7B62D /* AssistantAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAIApp.swift; sourceTree = "<group>"; };
+		7521D5D82A1FCF0D00E7B62D /* OpenAIBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAIBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7521D5DB2A1FCF0D00E7B62D /* OpenAIBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIBuddy.swift; sourceTree = "<group>"; };
 		7521D5DD2A1FCF0D00E7B62D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7521D5E12A1FCF0E00E7B62D /* AssistantAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssistantAI.entitlements; sourceTree = "<group>"; };
+		7521D5E12A1FCF0E00E7B62D /* OpenAIBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenAIBuddy.entitlements; sourceTree = "<group>"; };
 		7521D5E32A1FCF0E00E7B62D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistantAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7521D5E92A1FCF0F00E7B62D /* OpenAIBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenAIBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7521D5ED2A1FCF0F00E7B62D /* ChatControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerTests.swift; sourceTree = "<group>"; };
 		7521D6072A1FD15000E7B62D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		7521D60D2A1FDC0600E7B62D /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		7521D60F2A1FDE5B00E7B62D /* ChatCompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionResponse.swift; sourceTree = "<group>"; };
 		7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHttpService.swift; sourceTree = "<group>"; };
 		7521D6162A20999A00E7B62D /* ChatCompletionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletionRequest.swift; sourceTree = "<group>"; };
-		753E400A2A72744300711B58 /* AssistantAI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssistantAI.xctestplan; sourceTree = "<group>"; };
+		753E400A2A72744300711B58 /* OpenAIBuddy.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenAIBuddy.xctestplan; sourceTree = "<group>"; };
 		753E400B2A72EA4700711B58 /* HttpServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceTests.swift; sourceTree = "<group>"; };
 		753E400E2A72F21100711B58 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		756011682A7462FB0056CEBC /* ConfigDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigDev.xcconfig; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				756011682A7462FB0056CEBC /* ConfigDev.xcconfig */,
-				753E400A2A72744300711B58 /* AssistantAI.xctestplan */,
-				7521D5DA2A1FCF0D00E7B62D /* AssistantAI */,
+				753E400A2A72744300711B58 /* OpenAIBuddy.xctestplan */,
+				7521D5DA2A1FCF0D00E7B62D /* OpenAIBuddy */,
 				7521D5EC2A1FCF0F00E7B62D /* AssistantAITests */,
 				7521D5D92A1FCF0D00E7B62D /* Products */,
 			);
@@ -86,25 +86,25 @@
 		7521D5D92A1FCF0D00E7B62D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7521D5D82A1FCF0D00E7B62D /* AssistantAI.app */,
-				7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */,
+				7521D5D82A1FCF0D00E7B62D /* OpenAIBuddy.app */,
+				7521D5E92A1FCF0F00E7B62D /* OpenAIBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7521D5DA2A1FCF0D00E7B62D /* AssistantAI */ = {
+		7521D5DA2A1FCF0D00E7B62D /* OpenAIBuddy */ = {
 			isa = PBXGroup;
 			children = (
 				756011692A7468AC0056CEBC /* Info.plist */,
 				75D994752A213A31000D4161 /* Chat */,
 				7521D6112A1FDEC700E7B62D /* Models */,
 				7521D6062A1FCF1F00E7B62D /* Network */,
-				7521D5DB2A1FCF0D00E7B62D /* AssistantAIApp.swift */,
+				7521D5DB2A1FCF0D00E7B62D /* OpenAIBuddy.swift */,
 				7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */,
-				7521D5E12A1FCF0E00E7B62D /* AssistantAI.entitlements */,
+				7521D5E12A1FCF0E00E7B62D /* OpenAIBuddy.entitlements */,
 				7521D5E22A1FCF0E00E7B62D /* Preview Content */,
 			);
-			path = AssistantAI;
+			path = OpenAIBuddy;
 			sourceTree = "<group>";
 		};
 		7521D5E22A1FCF0E00E7B62D /* Preview Content */ = {
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7521D5D72A1FCF0D00E7B62D /* AssistantAI */ = {
+		7521D5D72A1FCF0D00E7B62D /* OpenAIBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7521D5FD2A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAI" */;
+			buildConfigurationList = 7521D5FD2A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "OpenAIBuddy" */;
 			buildPhases = (
 				7521D5D42A1FCF0D00E7B62D /* Sources */,
 				7521D5D52A1FCF0D00E7B62D /* Frameworks */,
@@ -176,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = AssistantAI;
+			name = OpenAIBuddy;
 			productName = AssistantAI;
-			productReference = 7521D5D82A1FCF0D00E7B62D /* AssistantAI.app */;
+			productReference = 7521D5D82A1FCF0D00E7B62D /* OpenAIBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7521D5E82A1FCF0F00E7B62D /* AssistantAITests */ = {
+		7521D5E82A1FCF0F00E7B62D /* OpenAIBuddyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7521D6002A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAITests" */;
+			buildConfigurationList = 7521D6002A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "OpenAIBuddyTests" */;
 			buildPhases = (
 				7521D5E52A1FCF0F00E7B62D /* Sources */,
 				7521D5E62A1FCF0F00E7B62D /* Frameworks */,
@@ -194,9 +194,9 @@
 			dependencies = (
 				7521D5EB2A1FCF0F00E7B62D /* PBXTargetDependency */,
 			);
-			name = AssistantAITests;
+			name = OpenAIBuddyTests;
 			productName = AssistantAITests;
-			productReference = 7521D5E92A1FCF0F00E7B62D /* AssistantAITests.xctest */;
+			productReference = 7521D5E92A1FCF0F00E7B62D /* OpenAIBuddyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7521D5D32A1FCF0D00E7B62D /* Build configuration list for PBXProject "AssistantAI" */;
+			buildConfigurationList = 7521D5D32A1FCF0D00E7B62D /* Build configuration list for PBXProject "OpenAIBuddy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,8 +231,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7521D5D72A1FCF0D00E7B62D /* AssistantAI */,
-				7521D5E82A1FCF0F00E7B62D /* AssistantAITests */,
+				7521D5D72A1FCF0D00E7B62D /* OpenAIBuddy */,
+				7521D5E82A1FCF0F00E7B62D /* OpenAIBuddyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 				75D994772A213A50000D4161 /* ChatMessageView.swift in Sources */,
 				7521D5DE2A1FCF0D00E7B62D /* ChatView.swift in Sources */,
 				7521D6172A20999A00E7B62D /* ChatCompletionRequest.swift in Sources */,
-				7521D5DC2A1FCF0D00E7B62D /* AssistantAIApp.swift in Sources */,
+				7521D5DC2A1FCF0D00E7B62D /* OpenAIBuddy.swift in Sources */,
 				7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */,
 				7521D6102A1FDE5B00E7B62D /* ChatCompletionResponse.swift in Sources */,
 				7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */,
@@ -287,7 +287,7 @@
 /* Begin PBXTargetDependency section */
 		7521D5EB2A1FCF0F00E7B62D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7521D5D72A1FCF0D00E7B62D /* AssistantAI */;
+			target = 7521D5D72A1FCF0D00E7B62D /* OpenAIBuddy */;
 			targetProxy = 7521D5EA2A1FCF0F00E7B62D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -409,13 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AssistantAI/AssistantAI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OpenAIBuddy/OpenAIBuddy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AssistantAI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpenAIBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AssistantAI/Info.plist;
+				INFOPLIST_FILE = OpenAIBuddy/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,7 +431,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.AssistantAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.OpenAIBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -446,13 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AssistantAI/AssistantAI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OpenAIBuddy/OpenAIBuddy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AssistantAI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpenAIBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AssistantAI/Info.plist;
+				INFOPLIST_FILE = OpenAIBuddy/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -468,7 +468,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.AssistantAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.assistant.OpenAIBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -496,7 +496,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistantAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AssistantAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenAIBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenAIBuddy";
 			};
 			name = Debug;
 		};
@@ -518,14 +518,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistantAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AssistantAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenAIBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenAIBuddy";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7521D5D32A1FCF0D00E7B62D /* Build configuration list for PBXProject "AssistantAI" */ = {
+		7521D5D32A1FCF0D00E7B62D /* Build configuration list for PBXProject "OpenAIBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7521D5FB2A1FCF0F00E7B62D /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7521D5FD2A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAI" */ = {
+		7521D5FD2A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "OpenAIBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7521D5FE2A1FCF0F00E7B62D /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7521D6002A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "AssistantAITests" */ = {
+		7521D6002A1FCF0F00E7B62D /* Build configuration list for PBXNativeTarget "OpenAIBuddyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7521D6012A1FCF0F00E7B62D /* Debug */,

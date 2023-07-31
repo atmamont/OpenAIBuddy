@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7521D5D72A1FCF0D00E7B62D"
-               BuildableName = "AssistantAI.app"
-               BlueprintName = "AssistantAI"
-               ReferencedContainer = "container:AssistantAI.xcodeproj">
+               BuildableName = "OpenAIBuddy.app"
+               BlueprintName = "OpenAIBuddy"
+               ReferencedContainer = "container:OpenAIBuddy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:AssistantAI.xctestplan"
+            reference = "container:OpenAIBuddy.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,9 +40,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7521D5E82A1FCF0F00E7B62D"
-               BuildableName = "AssistantAITests.xctest"
-               BlueprintName = "AssistantAITests"
-               ReferencedContainer = "container:AssistantAI.xcodeproj">
+               BuildableName = "OpenAIBuddyTests.xctest"
+               BlueprintName = "OpenAIBuddyTests"
+               ReferencedContainer = "container:OpenAIBuddy.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -53,7 +53,7 @@
                BlueprintIdentifier = "7521D5F22A1FCF0F00E7B62D"
                BuildableName = "AssistantAIUITests.xctest"
                BlueprintName = "AssistantAIUITests"
-               ReferencedContainer = "container:AssistantAI.xcodeproj">
+               ReferencedContainer = "container:OpenAIBuddy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7521D5D72A1FCF0D00E7B62D"
-            BuildableName = "AssistantAI.app"
-            BlueprintName = "AssistantAI"
-            ReferencedContainer = "container:AssistantAI.xcodeproj">
+            BuildableName = "OpenAIBuddy.app"
+            BlueprintName = "OpenAIBuddy"
+            ReferencedContainer = "container:OpenAIBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -90,9 +90,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7521D5D72A1FCF0D00E7B62D"
-            BuildableName = "AssistantAI.app"
-            BlueprintName = "AssistantAI"
-            ReferencedContainer = "container:AssistantAI.xcodeproj">
+            BuildableName = "OpenAIBuddy.app"
+            BlueprintName = "OpenAIBuddy"
+            ReferencedContainer = "container:OpenAIBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

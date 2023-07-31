@@ -1,6 +1,6 @@
 //
 //  ChatCompletionRequest.swift
-//  AssistantAI
+//  OpenAIBuddy
 //
 //  Created by Andrei on 26/05/2023.
 //

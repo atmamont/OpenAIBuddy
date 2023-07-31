@@ -1,12 +1,12 @@
 //
 //  HttpServiceTests.swift
-//  AssistantAITests
+//  OpenAIBuddyTests
 //
 //  Created by Andrei on 27/07/2023.
 //
 
 import XCTest
-@testable import AssistantAI
+@testable import OpenAIBuddy
 
 final class HttpServiceTests: XCTestCase {
     private let baseUrl = URL(string: "http://baseUrl")!
