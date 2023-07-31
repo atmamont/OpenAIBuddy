@@ -17,7 +17,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:AssistantAI.xcodeproj",
         "identifier" : "7521D5E82A1FCF0F00E7B62D",
