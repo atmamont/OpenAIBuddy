@@ -18,4 +18,6 @@ class OpenAIHttpService: HTTPService {
     init() {
         super.init(baseURL: url, token: token)
     }
+    
+    
 }

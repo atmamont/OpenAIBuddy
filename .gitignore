@@ -2,3 +2,4 @@
 *.xcbkptlist
 ConfigDev.xcconfig
 *.dtmp
+.$DependencyChart.drawio.bkp
