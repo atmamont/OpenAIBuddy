@@ -26,11 +26,19 @@ final class ChatControllerTests: XCTestCase {
     func test_chatController_appendsUserMessage() {
         let userInputText = "Test message"
         let sut = ChatController(service: mockFeedService)
+
+        do {
+            let userMessages = sut.messages.filter { $0.role == .user }
+            XCTAssertEqual(userMessages.count, 0)
+        }
+
         sut.send(userInputText)
         
-        let userMessages = sut.messages.filter { $0.role == .user }
-        XCTAssertEqual(userMessages.count, 1)
-        XCTAssertEqual(userMessages.last?.content, userInputText)
+        do {
+            let userMessages = sut.messages.filter { $0.role == .user }
+            XCTAssertEqual(userMessages.count, 1)
+            XCTAssertEqual(userMessages.last?.content, userInputText)
+        }
     }
     
     func test_chatController_appendsMessageOnSuccess() {
@@ -71,7 +79,8 @@ class HTTPServiceMock: HTTPService {
     lazy var defaultResponse = OpenAICompletionResponse(
         choices: [.init(message: .init(role: .assistant,
                                        content: defaultResponseText)),
-                  .init(message: .init(role: .assistant, content: "Another message"))]
+                  .init(message: .init(role: .assistant,
+                                       content: "Another message"))]
     )
     var defaultError: Error?
     var recordedBody: Encodable?
@@ -97,7 +106,10 @@ class FeedServiceMock: FeedService {
     
     var savedContext: [ChatMessage]?
     
-    func send(_ message: ChatMessage, context: [ChatMessage], completion: @escaping (Result<ChatMessage, Error>) -> Void) {
+    func send(_ message: ChatMessage,
+              context: [ChatMessage],
+              completion: @escaping (Result<ChatMessage, Error>) -> Void)
+    {
         sendCallCount += 1
         savedContext = context
         
