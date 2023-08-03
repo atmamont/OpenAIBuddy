@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OpenAIHttpService: HTTPService {
+class OpenAIHttpService: BaseHTTPService {
     private var token: String = {
         guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return "" }
         guard let token: String = infoDictionary["OPENAI_TOKEN"] as? String else { return "" }
@@ -20,11 +20,18 @@ class OpenAIHttpService: HTTPService {
     }
 }
 
-extension OpenAIHttpService: FeedService {
+class OpenAIService: FeedService {
+    private let httpService: HTTPService
+    
+    init(httpService: HTTPService) {
+        self.httpService = httpService
+    }
+
     func send(_ message: ChatMessage, context: [ChatMessage], completion: @escaping (Result<ChatMessage, Error>) -> Void) {
+        
         let body = OpenAICompletionRequest(messages: context)
 
-        self.executeRequest(
+        httpService.executeRequest(
             path: "chat/completions",
             method: "POST",
             body: body)

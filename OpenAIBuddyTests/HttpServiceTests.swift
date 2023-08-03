@@ -36,7 +36,7 @@ final class HttpServiceTests: XCTestCase {
             return (response, data)
         }
         
-        let sut = HTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
+        let sut = BaseHTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
         sut.executeRequest(path: "path", method: method, body: MockBody()) { (result: Result<MockResponse, Error>) in
         }
     }
@@ -56,7 +56,7 @@ final class HttpServiceTests: XCTestCase {
 
         let exp = expectation(description: "Network")
         
-        let sut = HTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
+        let sut = BaseHTTPService(baseURL: baseUrl, token: token, urlSession: urlSession)
         sut.executeRequest(path: "path", method: method, body: body) { (result: Result<MockResponse, Error>) in
             
             switch result {

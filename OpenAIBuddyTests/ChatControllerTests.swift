@@ -72,7 +72,7 @@ final class ChatControllerTests: XCTestCase {
     }
 }
 
-class HTTPServiceMock: HTTPService {
+class HTTPServiceMock: BaseHTTPService {
     var executeRequestCallCount = 0
     
     let defaultResponseText = "Hi how can I help you?"

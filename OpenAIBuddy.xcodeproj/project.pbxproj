@@ -13,8 +13,9 @@
 		7521D5E42A1FCF0E00E7B62D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7521D5E32A1FCF0E00E7B62D /* Preview Assets.xcassets */; };
 		7521D5EE2A1FCF0F00E7B62D /* ChatControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D5ED2A1FCF0F00E7B62D /* ChatControllerTests.swift */; };
 		7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6072A1FD15000E7B62D /* ChatController.swift */; };
-		7521D60E2A1FDC0600E7B62D /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60D2A1FDC0600E7B62D /* HTTPService.swift */; };
+		7521D60E2A1FDC0600E7B62D /* BaseHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D60D2A1FDC0600E7B62D /* BaseHTTPService.swift */; };
 		7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */; };
+		752C05592A7C4832004C0174 /* OpenAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C05582A7C4832004C0174 /* OpenAIModels.swift */; };
 		753E400C2A72EA4700711B58 /* HttpServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E400B2A72EA4700711B58 /* HttpServiceTests.swift */; };
 		753E400F2A72F21100711B58 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E400E2A72F21100711B58 /* MockURLProtocol.swift */; };
 		75D994772A213A50000D4161 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D994762A213A50000D4161 /* ChatMessageView.swift */; };
@@ -40,8 +41,9 @@
 		7521D5E92A1FCF0F00E7B62D /* OpenAIBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenAIBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7521D5ED2A1FCF0F00E7B62D /* ChatControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerTests.swift; sourceTree = "<group>"; };
 		7521D6072A1FD15000E7B62D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
-		7521D60D2A1FDC0600E7B62D /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		7521D60D2A1FDC0600E7B62D /* BaseHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHTTPService.swift; sourceTree = "<group>"; };
 		7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHttpService.swift; sourceTree = "<group>"; };
+		752C05582A7C4832004C0174 /* OpenAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModels.swift; sourceTree = "<group>"; };
 		753E400A2A72744300711B58 /* OpenAIBuddy.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenAIBuddy.xctestplan; sourceTree = "<group>"; };
 		753E400B2A72EA4700711B58 /* HttpServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceTests.swift; sourceTree = "<group>"; };
 		753E400E2A72F21100711B58 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				75D994752A213A31000D4161 /* Chat Feature */,
-				7521D60D2A1FDC0600E7B62D /* HTTPService.swift */,
+				7521D60D2A1FDC0600E7B62D /* BaseHTTPService.swift */,
 				7521D5DB2A1FCF0D00E7B62D /* OpenAIBuddy.swift */,
 				756011692A7468AC0056CEBC /* Info.plist */,
 				7521D5DF2A1FCF0E00E7B62D /* Assets.xcassets */,
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				7521D6122A1FEB7600E7B62D /* OpenAIHttpService.swift */,
+				752C05582A7C4832004C0174 /* OpenAIModels.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,8 +262,9 @@
 				7521D5DE2A1FCF0D00E7B62D /* ChatView.swift in Sources */,
 				7521D5DC2A1FCF0D00E7B62D /* OpenAIBuddy.swift in Sources */,
 				7521D6132A1FEB7600E7B62D /* OpenAIHttpService.swift in Sources */,
+				752C05592A7C4832004C0174 /* OpenAIModels.swift in Sources */,
 				7521D6082A1FD15000E7B62D /* ChatController.swift in Sources */,
-				7521D60E2A1FDC0600E7B62D /* HTTPService.swift in Sources */,
+				7521D60E2A1FDC0600E7B62D /* BaseHTTPService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
