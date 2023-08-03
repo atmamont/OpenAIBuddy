@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-08-02T10:40:42.209Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="Zfg1tAfGotmhpFFpt88C" version="21.6.5" type="device">
+<mxfile host="Electron" modified="2023-08-03T18:42:17.935Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="m5h6OrFxBPNVzWGqATZn" version="21.6.5" type="device">
   <diagram name="Page-1" id="3Dl5lnAm9g-ewHV6vhvQ">
     <mxGraphModel dx="1026" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="11100" math="0" shadow="0">
       <root>
@@ -67,16 +67,22 @@
         <mxCell id="G4GQTeV_wDfIAfZrhBzM-27" value="&amp;lt;FeedService&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="980" y="210" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G4GQTeV_wDfIAfZrhBzM-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="G4GQTeV_wDfIAfZrhBzM-35" target="G4GQTeV_wDfIAfZrhBzM-22">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="G4GQTeV_wDfIAfZrhBzM-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="G4GQTeV_wDfIAfZrhBzM-35" target="G4GQTeV_wDfIAfZrhBzM-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G4GQTeV_wDfIAfZrhBzM-35" value="ChatView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="G4GQTeV_wDfIAfZrhBzM-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="G4GQTeV_wDfIAfZrhBzM-35" target="G4GQTeV_wDfIAfZrhBzM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G4GQTeV_wDfIAfZrhBzM-40" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="50" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="G4GQTeV_wDfIAfZrhBzM-39" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="430" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="G4GQTeV_wDfIAfZrhBzM-35" value="ChatView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="980" y="450" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G4GQTeV_wDfIAfZrhBzM-36" value="ChatMessageView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="G4GQTeV_wDfIAfZrhBzM-36" value="ChatMessageView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="980" y="540" width="120" height="60" as="geometry" />
         </mxCell>
       </root>

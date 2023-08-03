@@ -7,6 +7,17 @@
 
 import Foundation
 
+struct ChatMessage {
+    let role: ChatUserRole
+    let content: String
+}
+
+enum ChatUserRole: String {
+    case user
+    case assistant
+    case system
+}
+
 protocol FeedService {
     func send(_ message: ChatMessage,
               context: [ChatMessage],
@@ -50,23 +61,3 @@ extension ChatController {
     }
 }
 
-extension OpenAIHttpService: FeedService {
-    func send(_ message: ChatMessage, context: [ChatMessage], completion: @escaping (Result<ChatMessage, Error>) -> Void) {
-        let body = ChatCompletionRequest(messages: context)
-
-        self.executeRequest(
-            path: "chat/completions",
-            method: "POST",
-            body: body)
-        { (result: Result<ChatCompletionResponse, Error>) in
-            switch result {
-            case .success(let response):
-                guard let message = response.choices.first?.message else { return }
-                completion(.success(message))
-                
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-}

@@ -68,7 +68,7 @@ class HTTPServiceMock: HTTPService {
     var executeRequestCallCount = 0
     
     let defaultResponseText = "Hi how can I help you?"
-    lazy var defaultResponse = ChatCompletionResponse(
+    lazy var defaultResponse = OpenAICompletionResponse(
         choices: [.init(message: .init(role: .assistant,
                                        content: defaultResponseText)),
                   .init(message: .init(role: .assistant, content: "Another message"))]
