@@ -29,6 +29,7 @@ extension OpenAIHttpService: FeedService {
             method: "POST",
             body: body)
         { (result: Result<OpenAICompletionResponse, Error>) in
+            
             switch result {
             case .success(let response):
                 guard let message = response.choices.first?.message else { return }

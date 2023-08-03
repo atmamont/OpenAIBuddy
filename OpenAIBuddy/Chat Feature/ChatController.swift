@@ -26,6 +26,7 @@ protocol FeedService {
 
 class ChatController: ObservableObject {
     private let service: FeedService
+    private static let conversationContextMessageCount = 5
     
     @Published var messages: [ChatMessage] = []
     @Published var error: Error?
@@ -53,11 +54,7 @@ extension ChatController {
     }
     
     private func prepareMessages() -> [ChatMessage] {
-        messages.suffix(10)
-    }
-    
-    private func handle(error: Error) {
-        self.error = error
+        messages.suffix(ChatController.conversationContextMessageCount)
     }
 }
 
