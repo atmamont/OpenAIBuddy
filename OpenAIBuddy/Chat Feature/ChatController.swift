@@ -31,7 +31,7 @@ class ChatController: ObservableObject {
     @Published var messages: [ChatMessage] = []
     @Published var error: Error?
     
-    init(service: FeedService = OpenAIHttpService()) {
+    init(service: FeedService = OpenAIService(httpService: OpenAIHttpService())) {
         self.service = service
     }
 }
@@ -57,4 +57,3 @@ extension ChatController {
         messages.suffix(ChatController.conversationContextMessageCount)
     }
 }
-

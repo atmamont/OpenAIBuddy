@@ -7,7 +7,15 @@
 
 import Foundation
 
-class HTTPService {
+protocol HTTPService {
+    func executeRequest<RequestBody: Encodable, Response: Decodable>(
+        path: String,
+        method: String,
+        body: RequestBody?,
+        completion: @escaping (Result<Response, Error>) -> Void)
+}
+
+class BaseHTTPService: HTTPService {
     private let baseURL: URL
     private let token: String
     private let urlSession: URLSession
